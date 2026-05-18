@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Claim History</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <h2>InsureChain</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="createPolicy.html">Create Policy</a>
+        <a href="submitClaim.html">Submit Claim</a>
+        <a href="verifyClaim.html">Verify Claim</a>
+        <a href="history.html">Claim History</a>
+        <a href="index.html">Logout</a>
+      </aside>
 
+      <main class="main">
+        <h1>Transparent Claim History</h1>
+
+        <div class="form-box">
+          <label>Search by Claim ID or Transaction Hash</label>
+          <input type="text" placeholder="Enter Claim ID / Tx Hash" />
+          <button>Search</button>
+        </div>
+
+        <div class="table-box" style="margin-top: 25px">
+          <h2>Claim Processing History</h2>
+          <table>
+            <tr>
+              <th>Time</th>
+              <th>Claim ID</th>
+              <th>Status</th>
+              <th>Updated By</th>
+              <th>Transaction Hash</th>
+            </tr>
+            <tr>
+              <td>2026-05-19</td>
+              <td>0</td>
+              <td>Submitted</td>
+              <td>Customer</td>
+              <td>0xabc123...</td>
+            </tr>
+            <tr>
+              <td>2026-05-19</td>
+              <td>0</td>
+              <td>Approved</td>
+              <td>Verifier</td>
+              <td>0xdef456...</td>
+            </tr>
+            <tr>
+              <td>2026-05-19</td>
+              <td>0</td>
+              <td>Paid</td>
+              <td>Smart Contract</td>
+              <td>0xghi789...</td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

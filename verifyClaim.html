@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verify Claim</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <h2>InsureChain</h2>
 
+        <a href="dashboard.html">Dashboard</a>
+        <a href="createPolicy.html">Create Policy</a>
+        <a href="submitClaim.html">Submit Claim</a>
+        <a href="verifyClaim.html">Verify Claim</a>
+        <a href="history.html">Claim History</a>
+        <a href="index.html">Logout</a>
+      </aside>
+
+      <main class="main">
+        <h1>Verify Insurance Claims</h1>
+
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Claim ID</th>
+                <th>Policy ID</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0x123...abc</td>
+                <td>2 ETH</td>
+                <td>
+                  <span class="pending">Pending</span>
+                </td>
+
+                <td>
+                  <button class="approve-btn">Approve</button>
+
+                  <button class="reject-btn">Reject</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>0x456...def</td>
+                <td>1 ETH</td>
+                <td>
+                  <span class="approved"> Approved </span>
+                </td>
+
+                <td>
+                  <button disabled>Done</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

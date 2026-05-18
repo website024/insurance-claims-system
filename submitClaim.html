@@ -1,1 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submit Claim</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <h2>InsureChain</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="createPolicy.html">Create Policy</a>
+        <a href="submitClaim.html">Submit Claim</a>
+        <a href="verifyClaim.html">Verify Claim</a>
+        <a href="history.html">Claim History</a>
+        <a href="index.html">Logout</a>
+      </aside>
 
+      <main class="main">
+        <h1>Submit Insurance Claim</h1>
+
+        <div class="form-box">
+          <label>Policy ID</label>
+          <input type="number" placeholder="0" />
+
+          <label>Claim Amount</label>
+          <input type="number" placeholder="500000000000000000" />
+
+          <label>Claim Reason</label>
+          <textarea placeholder="Describe the insurance event..."></textarea>
+
+          <label>Evidence File</label>
+          <input type="file" />
+
+          <label>Evidence Hash</label>
+          <input type="text" placeholder="Qm123abc / file hash" />
+
+          <button>Submit Claim</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
