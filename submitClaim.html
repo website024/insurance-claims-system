@@ -22,25 +22,39 @@
 
         <div class="form-box">
           <label>Policy ID</label>
-          <input type="number" placeholder="0" />
+          <input id="policyId" type="number" placeholder="0" />
 
           <label>Claim Amount</label>
-          <input type="number" placeholder="500000000000000000" />
+          <input
+            id="claimAmount"
+            type="number"
+            placeholder="500000000000000000"
+          />
 
           <label>Claim Reason</label>
-          <textarea placeholder="Describe the insurance event..."></textarea>
+          <textarea
+            id="claimReason"
+            placeholder="Describe the insurance event..."
+          ></textarea>
 
           <label>Evidence File</label>
           <input type="file" />
 
           <label>Evidence Hash</label>
-          <input type="text" placeholder="Qm123abc / file hash" />
+          <input
+            id="evidenceHash"
+            type="text"
+            placeholder="Qm123abc / file hash"
+          />
 
-          <button>Submit Claim</button>
+          <button onclick="submitClaimDemo()">Submit Claim</button>
+
+          <p id="claimMessage"></p>
         </div>
       </main>
     </div>
 
     <script src="js/app.js"></script>
+    <script src="js/submitClaim.js"></script>
   </body>
 </html>

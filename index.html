@@ -11,12 +11,14 @@
       <p>Select your role to continue</p>
 
       <div class="role-box">
-        <button onclick="goToDashboard('company')">Insurance Company</button>
+        <button onclick="connectBlockchain(); goToDashboard('company')">Insurance Company</button>
         <button onclick="goToDashboard('customer')">Customer</button>
         <button onclick="goToDashboard('verifier')">Verifier</button>
       </div>
     </div>
 
     <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+    <script src="js/blockchain.js"></script>
   </body>
 </html>

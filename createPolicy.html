@@ -22,25 +22,28 @@
 
       <div class="form-box">
         <label>Customer Wallet Address</label>
-        <input type="text" placeholder="0x...">
+        <input id="customerAddress" type="text" placeholder="0x...">
 
         <label>Policy Type</label>
-        <input type="text" placeholder="Health / Vehicle / Travel">
+        <input id="policyType" type="text" placeholder="Health / Vehicle / Travel">
 
         <label>Claim Limit</label>
-        <input type="number" placeholder="1000000000000000000">
+        <input id="claimLimit" type="number" placeholder="1000000000000000000">
 
         <label>Duration in Days</label>
-        <input type="number" placeholder="30">
+        <input id="durationDays" type="number" placeholder="30">
 
         <label>Compensation Conditions</label>
-        <textarea placeholder="Enter compensation conditions..."></textarea>
+        <textarea id="conditionText" placeholder="Enter compensation conditions..."></textarea>
 
-        <button>Create Policy</button>
+        <button onclick="createPolicyDemo()">Create Policy</button>
+
+        <p id="policyMessage"></p>
       </div>
     </main>
   </div>
 
   <script src="js/app.js"></script>
+  <script src="js/createPolicy.js"></script>
 </body>
 </html>
